@@ -1,5 +1,6 @@
 package com.example.dagger;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.Toolbar;
@@ -7,7 +8,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.App;
+import com.example.BaseActivity;
 import com.example.dagger.model.User;
+import com.example.dagger2.SecendActivity;
 
 import javax.inject.Inject;
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -48,6 +52,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
             tv_pepple.setText(people.toString() + "____");
         }
+
+
+        Intent intent =new Intent(MainActivity.this, SecendActivity.class);
+        startActivity(intent);
+
     }
 
 

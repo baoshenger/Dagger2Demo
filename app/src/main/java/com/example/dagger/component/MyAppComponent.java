@@ -7,6 +7,6 @@ import com.example.dagger.module.UserModule;
 import dagger.Component;
 
 @Component(modules = {UserModule.class, PeopleModule.class})
-public interface AppComponent {
+public interface MyAppComponent {
     void  injectMainActivity(MainActivity mainActivity);
 }
