@@ -10,7 +10,6 @@ import android.widget.Toast;
 import com.example.dagger.model.User;
 
 import javax.inject.Inject;
-
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
